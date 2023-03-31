@@ -46,6 +46,7 @@ Enter command:
 	___________________________________________________________
 Enter command: 
 	___________________________________________________________
+	clear [FILTER]							Removes all modules in the planner
 	exit								Exits the program
 	list [FILTER]							Displays a list of all modules taken or planned in the specified Year or Semester
 									If [FILTER] is not specified, then all modules will shown.

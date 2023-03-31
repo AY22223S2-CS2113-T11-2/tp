@@ -33,8 +33,6 @@ public class ModuleList {
         //this.user = user;
     }
 
-    
-
     /**
      * Gets the list of modules.
      *
@@ -131,78 +129,4 @@ public class ModuleList {
         }
         return "";
     }
-
-    // /**
-    //  * Lists out the modules in the user specified range.
-    //  * 
-    //  * @param userSemester
-    //  * @param userYear
-    //  * @throws InvalidGradeException
-    //  */
-    // public void printModules(int userYear, int userSemester) throws InvalidGradeException {
-    //     Map<Integer, Map<Integer, List<String[]>>> modulesByYearAndSemester = new HashMap<>();
-    //     for (Module m : modules) {
-
-    //         int year = m.getYear();
-    //         int sem = m.getSem();
-    //         String[] moduleArray = new String[] { m.getCode(), m.getGrade() };
-
-    //             modulesByYearAndSemester.computeIfAbsent(year, k -> new HashMap<>())
-    //                     .computeIfAbsent(sem, k -> new ArrayList<>())
-    //                     .add(moduleArray);
-
-    //     }
-
-    //     Ui.printDivider();
-    //     if (userYear == -1 && userSemester == -1) { // List all modules
-    //         for (int year = 1; year < 5; year++) {
-    //             for (int semester = 1; semester <= 2; semester++) {
-    //                 System.out.println("- Year " + year + " Semester " + semester + " -");
-
-    //                 List<String[]> modules = modulesByYearAndSemester.getOrDefault(year, new HashMap<>())
-    //                         .getOrDefault(semester, new ArrayList<>());
-
-    //                 if (modules.isEmpty()) {
-    //                     System.out.println("\tNo modules taken/added.");
-    //                 } else {
-    //                     for (String[] s : modules) {
-    //                         System.out.println(s[0] + " " + s[1]);
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     } else if (userYear != -1 && userSemester == -1) { // Year specified but not semester
-    //         for (int semester = 1; semester <= 2; semester++) {
-    //             System.out.println("- Year " + userYear + " Semester " + semester + " -");
-           
-    //             List<String[]> modules = modulesByYearAndSemester.getOrDefault(userYear, new HashMap<>())
-    //                 .getOrDefault(semester, new ArrayList<>());
-
-    //             if (modules.isEmpty()) {
-    //                 System.out.println("\tNo modules taken/added.");
-    //             } else {
-    //                 for (String[] s : modules) {
-    //                     System.out.println(s[0] + " " + s[1]);
-    //                 }
-    //             }
-    //             CAP.printSemCAP(modules);
-    //         }
-    //     } else if (userYear != -1 && userSemester != -1) { // both Sem and Year specified
-    //         System.out.println("- Year " + userYear + " Semester " + userSemester + " -");
-
-    //         List<String[]> modules = modulesByYearAndSemester.getOrDefault(userYear, new HashMap<>())
-    //                 .getOrDefault(userSemester, new ArrayList<>());
-
-    //         if (modules.isEmpty()) {
-    //             System.out.println("\tNo modules taken/added.");
-    //         } else {
-    //             for (String[] s : modules) {
-    //                 System.out.println(s[0] + " " + s[1]);
-    //             }
-    //         }
-    //     }
-    //     CAP.printOverallCAP(modules);
-    // }
-    
-
 }
