@@ -17,7 +17,8 @@ public class HelpCommandTest {
                                                          new ArrayList<>(), new HashMap<>());
 
         CommandResult expected = new CommandResult(
-            "exit" 
+            "clear [FILTER]" + "\t\t\t\t\t\t\tRemoves all modules in the planner\n" +
+            "\texit" 
                 + "\t\t\t\t\t\t\t\tExits the program\n" +
             "\tlist [FILTER]" 
                 + "\t\t\t\t\t\t\tDisplays a list of all modules taken or planned in the specified Year or Semester\n"
